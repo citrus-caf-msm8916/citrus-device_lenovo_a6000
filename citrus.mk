@@ -16,7 +16,7 @@ $(call inherit-product, device/lenovo/a6000/full_a6000.mk)
 
 # Inherit some common OmniROm stuff.
 
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/citrus/common.mk)
 
 # must be before including omni part
 TARGET_BOOTANIMATION_SIZE := 640x362
@@ -27,7 +27,9 @@ TARGET_BOARD_PLATFORM_VARIANT := msm8916
 # Assert
 TARGET_OTA_ASSERT_DEVICE := Kraft-T,a6000,K30-T,A6000,Kraft-W,Kraft-C,k30t,msm8916,Kraft-A6000,wt86518
 
-PRODUCT_NAME := omni_a6000
+PRODUCT_NAME := citrus_a6000
 BOARD_VENDOR := Lenovo
+PRODUCT_DEVICE := a6000
+PRODUCT_MANUFACTURER := Lenovo
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
